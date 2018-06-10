@@ -1,10 +1,11 @@
 diff --git a/t/30mouse.c b/t/30mouse.c
+index 91724e2..a8cdd68 100644
 --- a/t/30mouse.c
 +++ b/t/30mouse.c
 @@ -14,7 +14,7 @@ int main(int argc, char *argv[])
-
+ 
    tk = termkey_new_abstract("vt100", 0);
-
+ 
 -  termkey_push_bytes(tk, "\e[M !!", 6);
 +  termkey_push_bytes(tk, "\x1b[M !!", 6);
  
